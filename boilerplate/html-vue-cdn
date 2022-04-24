@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue by CDN</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+    <!-- make sure that your top level element matches what you declare in new Vue el:  in this case #app -->
+    <div id="app">
+        <div>This is a sample page using Vue CDN</div>
+        <div>You can pass data from your vue script using: {{ message }}</div>
+        <div> There is a lot more to Vue. Check out 
+            <a href='www.vuejs.org'>the official Vue documenation</a> 
+            to learn more!
+        </div>
+    </div>
+   
+    <!-- Vue Script  -->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                //   add static data here
+                message: 'your data here'
+            },
+            methods: {
+                //   add your functions here
+            }
+        })  
+    </script>
+</body>
+
+</html>
